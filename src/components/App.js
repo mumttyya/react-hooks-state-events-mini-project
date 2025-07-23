@@ -20,6 +20,7 @@ function App() {
   };
 
   const handleDeleteTask = (deletedTaskText) => {
+     const updatedTasks = tasks.filter(task => task.text !== deletedTaskText);
     setTasks(tasks.filter((task) => task.text !== deletedTaskText));
   };
 
